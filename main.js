@@ -59,8 +59,9 @@ function reduce(array, f, acc) {
 //wordLengths("hello its me") // [5,3,2]
 
 function wordLengths(str) {
-    // TODO: your code here 
-}
+
+  })
+ 
 
 //=============================================================================
 /*                                  Q2                                    */
@@ -73,6 +74,7 @@ function wordLengths(str) {
 
 function countOccurrences(string, character) {
     // your code is here
+
 }
 
 //=============================================================================
@@ -85,7 +87,11 @@ function countOccurrences(string, character) {
 
 function wordsLongerThanThree(str) {
     // TODO: your code here 
-}
+    var x = str.split(' ') ;
+    return filter(x, function(element){
+      return element.length>3 ; 
+    })
+  }
 
 //=============================================================================
 /*                                  Q4                                        */
@@ -100,6 +106,10 @@ function wordsLongerThanThree(str) {
 
 function repeatString(str, count) { 
  // TODO: your code here 
+ if (count<=0){
+  return "" ; 
+ }
+ return str = str + repeatString(str,count - 1) ; 
 } 
  
 
@@ -216,12 +226,18 @@ d- Decrement the number of "unread" books
 //================================================================================
 // Theoretical questions.
 // 1- In your own words,Why do we use Closures ?
+// i think  that allows for the nesting of function and make it easy
 
 // 2- In OOP, what does "this" refer to ?
+//refer to the object , class , or any other entity .
+
 
 // 3- What is jQuery?
+//it's a library from javascript .
+
 
 // 4- what is the diffrence between Closure's methods and The OOP's methods?
+// the diffrence is the paradigm.
 
 
 
